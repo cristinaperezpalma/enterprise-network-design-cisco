@@ -135,7 +135,7 @@ enterprise-network-design/
 
 Complete enterprise network implemented in Cisco Packet Tracer.
 
-![Topology](images/topology.png)
+![Topology](screenshots/topology.png)
 
 ---
 
@@ -143,7 +143,7 @@ Complete enterprise network implemented in Cisco Packet Tracer.
 
 Department VLANs configured on the HQ multilayer switch.
 
-![VLANs](images/vlans.png)
+![VLANs](screenshots/vlans.png)
 
 ---
 
@@ -151,7 +151,7 @@ Department VLANs configured on the HQ multilayer switch.
 
 Successful OSPF adjacency between network devices.
 
-![OSPF](images/ospf-neighbors.png)
+![OSPF](screenshots/ospf-neighbors.png)
 
 ---
 
@@ -159,7 +159,7 @@ Successful OSPF adjacency between network devices.
 
 Dynamic routes learned through OSPF.
 
-![Routing](images/routing-table1.png)
+![Routing](screenshots/routing-table1.png)
 
 ---
 
@@ -167,7 +167,7 @@ Dynamic routes learned through OSPF.
 
 ACL protecting the compute server network.
 
-![ACL](images/acl-server-access.png)
+![ACL](screenshots/acl-server-access.png)
 
 ---
 
@@ -175,7 +175,7 @@ ACL protecting the compute server network.
 
 Automatic IP assignment using redundant DHCP servers.
 
-![DHCP](images/dhcp-working.png)
+![DHCP](screenshots/dhcp-working.png)
 
 ---
 
@@ -183,7 +183,7 @@ Automatic IP assignment using redundant DHCP servers.
 
 Gateway redundancy for critical services.
 
-![HSRP](images/hsrp.png)
+![HSRP](screenshots/hsrp.png)
 
 ---
 
@@ -191,7 +191,7 @@ Gateway redundancy for critical services.
 
 Internal access to the corporate web server.
 
-![Private Web](images/private-web.png)
+![Private Web](screenshots/private-web.png)
 
 ---
 
@@ -199,7 +199,7 @@ Internal access to the corporate web server.
 
 Access to the published web server using Static NAT.
 
-![Public Web](images/public-web.png)
+![Public Web](screenshots/public-web.png)
 
 ---
 
@@ -207,7 +207,7 @@ Access to the published web server using Static NAT.
 
 Successful communication between different network segments.
 
-![Ping](images/ping-between-sites.png)
+![Ping](screenshots/ping-between-sites.png)
 
 ---
 
