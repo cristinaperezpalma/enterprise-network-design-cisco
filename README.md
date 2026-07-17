@@ -1,230 +1,206 @@
-# Enterprise Multi-Site Network Design
+# Enterprise Network Design
 
-Academic project focused on the design and implementation of a secure corporate network using Cisco Packet Tracer.
+A complete enterprise network infrastructure designed and implemented in **Cisco Packet Tracer**, following enterprise networking best practices.
 
-The project simulates the network infrastructure of a company with a headquarters (HQ) and remote branches, applying network segmentation, dynamic routing, redundancy and secure access to internal services.
-
----
-
-## Project Objectives
-
-- Design a scalable enterprise network from scratch.
-- Connect the headquarters with remote offices.
-- Separate departments using VLANs.
-- Implement inter-VLAN routing.
-- Provide automatic IP address assignment using DHCP.
-- Configure dynamic routing between sites with OSPF.
-- Ensure high availability for critical services.
-- Protect sensitive resources using ACLs.
-- Publish an internal web server through Static NAT.
-- Prepare the infrastructure for future expansion.
+The project simulates a multi-site company composed of a Headquarters (HQ) and two remote branches, implementing secure communication, high availability, dynamic routing, VLAN segmentation, and enterprise network services.
 
 ---
 
-## Technologies Used
+## Project Overview
 
-- Cisco Packet Tracer
-- Cisco Multilayer Switches
-- Cisco Access Switches
-- Cisco Routers
+This project was developed as part of a Computer Networks course with the objective of designing a scalable, secure and fault-tolerant enterprise network from scratch.
 
-### Networking Technologies
-
-- VLANs
-- Inter-VLAN Routing
-- Trunk Links (802.1Q)
-- DHCP
-- OSPF
-- HSRP
-- ACLs
-- Static NAT
-- IPv4
-- IPv6 (Branch 2 planning)
-
----
-
-## Network Architecture
-
-The network consists of:
+The infrastructure includes:
 
 - Headquarters (HQ)
-- Branch Office 1 (B1)
-- Branch Office 2 (IPv6 design)
-- Departmental VLAN segmentation
-- Server network
-- Compute server network
-- Private web server
-- Public web server via Static NAT
-- Guest network
+- Branch Office 1 (IPv4)
+- Branch Office 2 (IPv6)
+- Enterprise server infrastructure
+- Public and private web services
+- High availability mechanisms
+- Dynamic routing
+- Network segmentation
+- Internet access simulation
 
 ---
 
-## Implemented Features
+## Features
 
-- VLAN creation for every department
-- Inter-VLAN routing using Multilayer Switches
-- Trunk configuration between switches
-- Redundant DHCP servers
-- DHCP Relay (`ip helper-address`)
-- OSPF dynamic routing
-- High Availability using HSRP
+- Hierarchical Collapsed Core Architecture
+- Department-based VLAN segmentation
+- Inter-VLAN Routing
+- OSPF Dynamic Routing
+- IPv4 & IPv6 Addressing
+- DHCP Redundancy
+- HSRP Gateway Redundancy
 - Access Control Lists (ACLs)
-- Static NAT for public web publishing
-- Internal and external web access validation
-- Guest network segmentation
+- Static NAT
+- Public and Private Web Servers
+- Guest Network
+- WAN Connectivity Between Sites
 
 ---
 
-## Security Features
+## Technologies
 
-- Department isolation using VLANs
-- ACLs protecting compute servers
-- Restricted access to sensitive resources
-- Static NAT for secure publication of web services
-- Network segmentation for internal and guest users
+| Category | Technologies |
+|-----------|--------------|
+| Simulation | Cisco Packet Tracer |
+| Switching | Cisco 3650 Multilayer Switches, Cisco 2960 |
+| Routing | OSPF, OSPFv3 |
+| Network Services | DHCP, NAT |
+| High Availability | HSRP |
+| Security | ACLs, VLAN Segmentation |
+| Addressing | IPv4, IPv6, SLAAC |
+| Standards | IEEE 802.1Q |
 
 ---
 
-## Repository Structure
+# Network Topology
+
+The following figure shows the complete enterprise network implemented in Packet Tracer.
+
+![Enterprise Network](screenshots/topology.png)
+
+---
+
+# Project Structure
 
 ```
 enterprise-network-design/
 │
+├── docs/
+│   ├── 01-network-architecture.md
+│   ├── 02-vlan-design.md
+│   ├── 03-dynamic-routing-ospf.md
+│   ├── 04-network-services.md
+│   ├── 05-security.md
+│   ├── 06-high-availability.md
+│   └── 07-testing.md
+│
 ├── packet-tracer/
 │   └── enterprise-network.pkt
 │
-├── images/
-│   ├── topology.png
-│   ├── vlans.png
-│   ├── ospf-neighbors.png
-│   ├── routing-table1.png
-│   ├── routing-table2.png
-│   ├── routing-table3.png
-│   ├── acl-server-access.png
-│   ├── dhcp-working.png
-│   ├── hsrp.png
-│   ├── private-web.png
-│   ├── public-web.png
-│   └── ping-between-sites.png
+├── screenshots/
 │
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-## Skills Developed
+# Documentation
 
-- Enterprise network design
-- VLAN planning
-- IP addressing
-- Layer 3 switching
-- Dynamic routing with OSPF
-- High availability using HSRP
-- DHCP configuration
-- Network segmentation
-- Access Control Lists (ACLs)
-- Static NAT
-- Cisco Packet Tracer simulation
-- Network troubleshooting
+Detailed technical documentation is available inside the **docs** directory.
 
----
-
-## Screenshots
-
-### Network Topology
-
-Complete enterprise network implemented in Cisco Packet Tracer.
-
-![Topology](screenshots/topology.png)
+| Document | Description |
+|----------|-------------|
+| [01 - Network Architecture](docs/01-network-architecture.md) | Enterprise architecture and design decisions |
+| [02 - VLAN Design](docs/02-vlan-design.md) | VLAN segmentation and inter-VLAN routing |
+| [03 - Dynamic Routing](docs/03-dynamic-routing-ospf.md) | OSPF configuration and routing |
+| [04 - Network Services](docs/04-network-services.md) | DHCP, servers and network services |
+| [05 - Security](docs/05-security.md) | ACLs, NAT and security mechanisms |
+| [06 - High Availability](docs/06-high-availability.md) | HSRP and redundancy |
+| [07 - Testing](docs/07-testing.md) | Connectivity validation and verification |
 
 ---
 
-### VLAN Configuration
+# Project Highlights
 
-Department VLANs configured on the HQ multilayer switch.
+## VLAN Segmentation
+
+The enterprise network is divided into multiple VLANs to isolate departments, improve security and reduce broadcast traffic.
 
 ![VLANs](screenshots/vlans.png)
 
 ---
 
-### OSPF Neighbors
+## Dynamic Routing
 
-Successful OSPF adjacency between network devices.
+Inter-site communication is achieved through OSPF, allowing automatic route exchange across the infrastructure.
 
-![OSPF](screenshots/ospf-neighbors.png)
-
----
-
-### Routing Tables
-
-Dynamic routes learned through OSPF.
-
-![Routing](screenshots/routing-table1.png)
+![OSPF Neighbors](screenshots/ospf-neighbors.png)
 
 ---
 
-### Access Control Lists
+## High Availability
 
-ACL protecting the compute server network.
-
-![ACL](screenshots/acl-server-access.png)
-
----
-
-### DHCP Operation
-
-Automatic IP assignment using redundant DHCP servers.
-
-![DHCP](screenshots/dhcp-working.png)
-
----
-
-### HSRP Configuration
-
-Gateway redundancy for critical services.
+Gateway redundancy is implemented using HSRP to ensure service continuity in case of device failure.
 
 ![HSRP](screenshots/hsrp.png)
 
 ---
 
-### Private Web Server
+## Access Control
 
-Internal access to the corporate web server.
+Extended ACLs restrict access to the compute servers, allowing only authorized departments.
 
-![Private Web](screenshots/private-web.png)
+![ACL](screenshots/acl-server-access.png)
 
 ---
 
+## DHCP Services
+
+Redundant DHCP servers provide automatic IP address allocation across the network.
+
+![DHCP](screenshots/dhcp-working.png)
+
+---
+
+## Web Services
+
+### Private Web Server
+
+Internal users can access the corporate web server.
+
+![Private Web](screenshots/private-web.png)
+
 ### Public Web Server
 
-Access to the published web server using Static NAT.
+Static NAT publishes the internal web server to the simulated Internet.
 
 ![Public Web](screenshots/public-web.png)
 
 ---
 
-### Connectivity Test
+## Connectivity Validation
 
-Successful communication between different network segments.
+Connectivity between different departments and remote sites has been successfully verified.
 
-![Ping](screenshots/ping-between-sites.png)
-
----
-
-## Future Improvements
-
-- Complete IPv6 deployment for Branch 2.
-- Implement secure remote-access VPN.
-- Add monitoring and security event detection.
-- Improve firewall policies.
-- Perform performance and scalability testing.
+![Ping Validation](screenshots/ping-between-sites.png)
 
 ---
 
-## Academic Information
+# Learning Outcomes
 
-**Degree:** Bachelor's Degree in Telecommunications Engineering
+This project allowed me to gain practical experience with:
 
-**Course:** Computer Networks / Enterprise Network Design
+- Enterprise network design
+- Hierarchical network architectures
+- Layer 2 and Layer 3 switching
+- VLAN implementation
+- Inter-VLAN routing
+- Dynamic routing with OSPF
+- DHCP deployment
+- Network redundancy
+- ACL configuration
+- Static NAT
+- IPv4 and IPv6 networking
+- Cisco Packet Tracer
 
-**Simulation Tool:** Cisco Packet Tracer
+---
+
+# Repository Contents
+
+- Complete Packet Tracer project
+- Technical documentation
+- Configuration screenshots
+- Network validation results
+
+---
+
+# License
+
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for more information.
