@@ -71,12 +71,11 @@ enterprise-network-design/
 │
 ├── docs/
 │   ├── 01-network-architecture.md
-│   ├── 02-vlan-design.md
-│   ├── 03-dynamic-routing-ospf.md
+│   ├── 02-ip-addressing-and-vlans.md
+│   ├── 03-routing-and-redundancy.md
 │   ├── 04-network-services.md
-│   ├── 05-security.md
-│   ├── 06-high-availability.md
-│   └── 07-testing.md
+│   ├── 05-security-implementation.md
+│   ├── 06-network-validation.md
 │
 ├── packet-tracer/
 │   └── enterprise-network.pkt
@@ -96,12 +95,11 @@ Detailed technical documentation is available inside the **docs** directory.
 | Document | Description |
 |----------|-------------|
 | [01 - Network Architecture](docs/01-network-architecture.md) | Enterprise architecture and design decisions |
-| [02 - VLAN Design](docs/02-vlan-design.md) | VLAN segmentation and inter-VLAN routing |
-| [03 - Dynamic Routing](docs/03-dynamic-routing-ospf.md) | OSPF configuration and routing |
+| [02 - VLAN Design](docs/02-ip-addressing-and-vlans.md) | VLAN segmentation and inter-VLAN routing |
+| [03 - Dynamic Routing](docs/03-routing-and-redundancy.md) | OSPF configuration and routing |
 | [04 - Network Services](docs/04-network-services.md) | DHCP, servers and network services |
-| [05 - Security](docs/05-security.md) | ACLs, NAT and security mechanisms |
-| [06 - High Availability](docs/06-high-availability.md) | HSRP and redundancy |
-| [07 - Testing](docs/07-testing.md) | Connectivity validation and verification |
+| [05 - Security](docs/05-security-implementation.md) | ACLs, NAT and security mechanisms |
+| [07 - Testing](docs/06-network-validation.md) | Connectivity validation and verification |
 
 ---
 
